@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            android:orientation="vertical"
+
+            app:contentScrim="?attr/colorPrimary">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:background="@drawable/gads_header"
+                android:id="@+id/subtoolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent">
+
+            </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:gravity="center_horizontal"
+
+                android:clickable="true"
+                android:id="@+id/tv"
+                android:padding="7dp"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:textColor="#E4750E"
+                android:fontFamily="sans-serif-black"
+                android:layout_height="wrap_content"
+                android:text="Project Submission " />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/line"
+                android:layout_height="10px" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:paddingTop="30dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".SubmitLink">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="#000000"
+            android:orientation="horizontal">
+            <EditText
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:background="@drawable/test"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:id="@+id/firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:background="@drawable/test"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:hint="Last Name" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/emailAddress"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/test"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_height="40dp"
+                android:hint="Email Address" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:padding="10dp"
+                android:inputType="textUri"
+                android:background="@drawable/test"
+                android:layout_margin="20dp"
+                android:id="@+id/linkProject"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Project on GITHUB (link)" />
+        </LinearLayout>
+
+        <info.hoang8f.widget.FButton
+
+            android:layout_marginTop="40sp"
+            android:id="@+id/submitProject"
+            app:fButtonColor="@color/btnSubmitLink"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:cornerRadius="40dp"
+            app:shadowEnabled="true"
+            app:shadowColor="@android:color/white">
+
+        </info.hoang8f.widget.FButton>
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

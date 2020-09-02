@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:id="@+id/skill"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher_background"
+            tools:ignore="VectorDrawableCompat"/>
+
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/skillname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:lines="2"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:gravity="bottom|center"
+                    android:textColor="@android:color/black"
+
+                    android:id="@+id/skillscore"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:gravity="bottom|center"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/skillcountry"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

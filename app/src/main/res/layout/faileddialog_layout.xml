@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/failedimg"
+        android:layout_gravity="right"
+        android:layout_margin="7dp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_baseline_highlight_off_24" />
+
+    <ImageView
+        android:id="@+id/warning"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_warning_24" />
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#D50000"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:text=" Submission not Successful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
